@@ -8,9 +8,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass":"node node_modules/sass/sass.js styles.sass styles.css"
+    "sass": "node node_modules/sass/sass.js --quiet styles.sass styles.css",
+    "blog": "json-server --watch db.json"
   },
   "devDependencies": {
     "sass": "^1.84.0"
+  },
+  "dependencies": {
+    "boostrap": "^2.0.0",
+    "bootstrap": "^5.3.3"
   }
 }
