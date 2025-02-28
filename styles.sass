@@ -1,5 +1,5 @@
 //Import Boostrap
-//@use 'node_modules/bootstrap/scss/bootstrap'
+@use 'node_modules/bootstrap/scss/bootstrap'
 
 // Paleta de colores
 $color-dark: #222831
@@ -43,8 +43,11 @@ figcaption
     color: $color-light
     background: $color-accent
     padding: 10px 80px
-    
-    
+.btn-primary
+    font-family: $font-content
+    color: $color-light
+    background: $color-accent
+    padding: 10px 80px
 
 
 
@@ -95,13 +98,7 @@ figcaption
         color: $color-gray-dark
         font-family: $font-content
 
-.btn-outline-success
-    border-color: $color-accent
-    color: $color-accent
 
-    &:hover
-        background-color: $color-accent
-        color: $color-light
 
 footer
     background-color: $color-dark
@@ -238,3 +235,17 @@ div[role="cards"]
 @media (min-width: 992px)
     .user-icon-container
         text-align: right
+/* Styles Alert jQuery UI */
+#customAlert
+  background-color: $color-light
+  color: $color-dark
+  border: 2px solid $color-accent
+  padding: 20px
+
+  .ui-dialog-titlebar
+    background-color: $color-accent
+    color: #fff
+
+  p
+    font-size: 16px
+    font-family: $font-content

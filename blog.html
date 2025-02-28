@@ -63,57 +63,19 @@
       <main class="container-fluid text-center">
             <div class="container">
                   <img src="./assets/1358647.png" alt="imgenPrueba" class="img-fluid">
-                  <h1 class="text-center">Titre Blog</h1>
-                  <div class="container ">
-                        <p class="text-justify">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                              ut labore et
-                              dolore magna aliqua.
-                        </p>
-                        <br>
-                        <p class="text-justify">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                              ut labore et
-                              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                              nisi ut aliquip
-                              ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                              cillum dolore eu
-                              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                              officia deserunt
-                              mollit anim id est laborum.
-                        </p>
-
-                        <figure>
-                              <img src="./assets/MEGATRON.jpg" alt="Imagen de Megatron" role="imgBlog2"
-                                    class="img-fluid">
-                              <figcaption class="text-center">Megatron</figcaption>
-                        </figure>
-
-                        <p class="text-justify">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                              ut labore et
-                              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                              nisi ut aliquip
-                              ex ea commodo consequat.
-                        </p>
-                        <p class="text-justify">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                              ut labore et
-                              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                              nisi ut aliquip
-                              ex ea commodo consequat.
-                        </p>
+                  <h1 class="text-center"id="blog-title"></h1>
+                  <div class="container" id="blog-content">
                   </div>
 
                   <div class="container mt5">
                         <h3>Laissez vos commentaires</h3>
-                        <form>
+                        <form id="CommentForm">
                               <div class="form-group">
-                                    <textarea class="form-control" rows="5"
-                                          placeholder="Ecrivez vos commentaires"></textarea>
+                                    <textarea id="comment" class="form-control" rows="5"
+                                          placeholder="Ecrivez vos commentaires" required></textarea>
                               </div>
                               <div class="text-end">
-                                    <button class="btn btn-outline-success" type="submit">Remettre</button>
+                                    <button class="btn btn-outline-success" type="submit" id="ButtonComments">Remettre</button>
                               </div>
                         </form>
                   </div>
@@ -124,32 +86,8 @@
                               <div class="border rounded p-3 my-2 d-flex align-items-center">
                                     <img src="./assets/HollowKnight.jpg" alt="Utilisateur01" class="rounded-circle "
                                           role="imgProfile" width="50">
-                                    <div>
-                                          <p><strong>Utilisateur01:</strong> Lorem ipsum dolor sit amet, consectetur
-                                                adipiscing elit. Vestibulum eget
-                                                commodo eros. Donec orci tellus, maximus nec scelerisque in, gravida
-                                                eget turpis.</p>
-
-                                          <div class="border rounded p-2 ms-5 bg-light fs-6">
-                                                <img src="./assets/HornetHK.jpg" alt="Utilisateur02"
-                                                      class="rounded-circle me-2" role="imgProfile" width="40">
-                                                <p><strong>Utilisateur02:</strong> Merci pour votre commentaire! Je suis
-                                                      d'accord avec vous.</p>
-                                          </div>
-                                    </div>
-                              </div>
-                              <div class="border rounded p-3 my-2 d-flex align-items-center">
-                                    <img src="./assets/HornetHK.jpg" alt="Utilisateur03" class="rounded-circle me-2"
-                                          role="imgProfile" width="50">
-                                    <div>
-                                          <p><strong>Utilisateur03:</strong> J'adore cet article! Il est très bien
-                                                écrit.</p>
-                                          <div class="border rounded p-2 ms-5 bg-light fs-6">
-                                                <img src="./assets/HollowKnight.jpg" alt="Utilisateur01"
-                                                      class="rounded-circle me-2" role="imgProfile" width="40">
-                                                <p><strong>Utilisateur01:</strong> Merci beaucoup! J'apprécie votre
-                                                      retour.</p>
-                                          </div>
+                                    <div id="comments">
+                                          <p></p>
                                     </div>
                               </div>
                         </div>
@@ -160,8 +98,16 @@
 
             </div>
       </main>
+      <div ></div>
 
+      <div>
+            
+            <div id="blog-content"></div>
+            <div id="comments"></div>
+          </div>
 
+     
+          
       <footer class="footer">
             <div class="social-icons">
                   <a href="#"><i class="fab fa-facebook"></i></a>
@@ -187,6 +133,7 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
+      <script src="blog.js"></script>
 </body>
 
 </html>

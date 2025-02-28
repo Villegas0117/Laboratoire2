@@ -12,7 +12,7 @@
     "blog": "json-server --watch db.json"
   },
   "devDependencies": {
-    "sass": "^1.84.0"
+    "sass": "^1.85.1"
   },
   "dependencies": {
     "boostrap": "^2.0.0",
