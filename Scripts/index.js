@@ -27,7 +27,7 @@ async function getDataCard() {
       card.classList.add("col-12", "col-md-6", "col-lg-4", "d-flex");
       card.innerHTML = `
                 <div class="card shadow border mx-auto mt-3 first-card" role="cards">
-                    <img class="card-img-top" src="./assets/1358647.png" alt="Card image cap" role="imgcard">
+                    <img class="card-img-top" src="../assets/1358647.png" alt="Card image cap" role="imgcard">
                     <div class="card-body">
                         <div class="container text-center my-4">
                             <!-- Cambiar el href para incluir el id del blog -->
