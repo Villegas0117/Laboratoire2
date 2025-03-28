@@ -4,10 +4,10 @@ function AddComment() {
       const [error, setError] = React.useState(null);
       const [success, setSuccess] = React.useState(false);
     
-      // Extraer blogId de la URL (ejemplo: http://.../blogReact.html?id=b2)
+      
       const getBlogIdFromUrl = () => {
         const urlParams = new URLSearchParams(window.location.search);
-        return urlParams.get('id'); // Esto devolverá "b2" en tu ejemplo
+        return urlParams.get('id'); 
       };
     
       const blogId = getBlogIdFromUrl();
@@ -30,10 +30,10 @@ function AddComment() {
         setIsSubmitting(true);
     
         try {
-          // URL de la API (ajusta según tu entorno)
-          const API_URL = 'http://localhost:3000/comments'; // Cambia esto por tu endpoint real
           
-          // Estructura de datos para coincidir con tus comentarios existentes
+          const API_URL = 'http://localhost:3000/comments'; 
+          
+          
           const commentData = {
             blogId: blogId,       // Ejemplo: "b2"
             content: comment.trim(),
@@ -57,7 +57,7 @@ function AddComment() {
           setComment('');
           setSuccess(true);
           
-          // Recargar comentarios si existe esta función
+        
           if (typeof getComentsDetails === 'function') {
             getComentsDetails();
           }
