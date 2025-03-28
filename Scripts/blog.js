@@ -26,7 +26,7 @@ async function getBlogDetails() {
 
     if (blog) {
       document.querySelector("#blog-title").textContent = blog.title;
-      //document.querySelector("#blog-author").textContent = `Author: ${blog.author}`;
+
       document.querySelector("#blog-content").textContent = blog.content;
     } else {
       console.log("Blog not found.");
@@ -36,6 +36,8 @@ async function getBlogDetails() {
     console.error("Error fetching blog details:", err);
   }
 }
+
+
 
 // Función para obtener el blog
 async function getBlog(blogId) {
@@ -65,7 +67,6 @@ async function commentsBlog(blogId) {
 
 // Llamar a la función al cargar la página
 getBlogDetails();
-getComentsDetails();
 
 document
   .getElementById("CommentForm")

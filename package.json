@@ -8,8 +8,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
- "sass": "node node_modules/sass/sass.js --quiet CSS/sass/styles.sass CSS/styles.css",
-
+    "sass": "node node_modules/sass/sass.js --quiet CSS/sass/styles.sass CSS/styles.css",
     "blog": "json-server --watch data/db.json"
   },
   "devDependencies": {
